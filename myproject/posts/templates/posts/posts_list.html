@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>posts</title>
-</head>
-<body>
-    <h1>Posts list</h1>
+
+<br>
+<br>
 
 
-    {% block content %}
-    <section>
-        <article class="post">
-            {% for post in Posts %}
-            <h2>{{ post.title}}</h2>
+
+{% block content %}
+<section>
+    <h1>Posts List</h1>
+    {% for post in Posts %}
+
+        <article class="Post">
+            <h2>{{ post.title }}</h2>
             <p>{{ post.date }}</p>
             <p>{{ post.body }}</p>
             {% endfor %}
         </article>
-    </section>
-    {% endblock %}
-</body>
-</html>
+        </section>
+        {% endblock %} 

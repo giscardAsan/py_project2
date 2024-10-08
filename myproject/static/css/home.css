@@ -1,9 +1,5 @@
 
   
-    body{
-        background-color: white;
-    }
-
     .gallery{
         display: flex;
         overflow-x: scroll;

@@ -1,50 +1,17 @@
  
+{% extends 'layout.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-</head>
-<body>
-    <header>
-        <input type="checkbox" name="" id="chki">
-        <div class="logo"><h1><img src="images/Screenshot.png" width="150px" alt=""></h1></div>
-        <div class="search-box">
-            <form action="" method="post">
-                <input type="text" name="search" id="srch" placeholder="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="new.html">NEW</a></li>
-            <li><a href="about us.html">ABOUT</a></li>
-            <li><a href="login.html"><img style="border-radius: 1rem; background-color:white;" src="icons/account.png" width="19px" alt=""></a></li>
-            
-                <li>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </li>
-        </ul>
-        <div class="memu">
-            <label for="chki">
-               <i class="fa fa-bars"></i>
-            </label>
-        </div>
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>Home</h1>
-    <p>check out my <a href="/about">About</a>page.</p>
-</body>
-</html>
+
+
+{% block title %}
+     HOME
+{% endblock %}
+
+
+{% block content %}
+
+<h1>HOME</h1>
+<div>
+    <p>My ABOUT Page</p>
+</div>
+{% endblock %}

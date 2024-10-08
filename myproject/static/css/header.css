@@ -1,9 +1,3 @@
-h1, p{
-    text-align: center;
-    color: #000;
-}
-
-
 
 *{
     margin: 0;
@@ -13,24 +7,16 @@ h1, p{
     background-attachment: fixed;
 }
 
-
-body{
-   background-color: #000;
-    background-position: center;
-    color: rgb(3, 3, 3);
-    background-attachment: fixed;
-}
-
 header{
     width: 100%;
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background: rgb(0, 0, 0);
+    background: rgb(243, 228, 228);
 }
 
 #chki{

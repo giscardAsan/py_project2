@@ -10,12 +10,6 @@
 
 
                                      /* The FOOTER */
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #ebdcdc;
-}
 
 footer{
     display: flex;

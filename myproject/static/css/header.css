@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +5,9 @@
     font-family: arial;
     background-attachment: fixed;
 }
+
+
+
 
 header{
     width: 100%;
@@ -16,7 +18,7 @@ header{
     position: fixed;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background: rgb(243, 228, 228);
+    background: rgb(0, 0, 0);
 }
 
 #chki{
@@ -129,6 +131,6 @@ header .memu{
     }
 
     header ul{
-        width: 100;
+        width: 50%;
     }
 }

@@ -10,7 +10,4 @@ def about(request):
     #return HttpResponse("My About Page")
     return render(request, 'about.html')
  
-def header(request):
-    #return HttpResponse("My About Page")
-    return render(request, 'header.html')
-    
+ 

@@ -3,7 +3,7 @@ from .models import Post
 
 # Create your views here.
 
-def poster_list(request):
+def poster(request):
     Data = Post.objects.all()
     return render(request, 'posts/poster.html', {'posts': Data})
  

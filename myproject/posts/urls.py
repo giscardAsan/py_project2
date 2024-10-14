@@ -5,7 +5,7 @@ from . import views
 app_name = 'posts'
 
 urlpatterns = [
-    path('', views.poster_list, name="list"),
+    path('', views.poster, name="list"),
     path('<slug:slug>', views.post_page, name="page"),
     
     

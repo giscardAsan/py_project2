@@ -1,7 +1,10 @@
+{% load static %}
+
+
+
 <header>
-    {% load static %}
     <input type="checkbox" name="" id="chki">
-    <div class="logo"><h1><img src="{% static 'imagefolder/images/Screenshot.png' %}" width="150px" alt=""></h1></div>
+    <div class="logo"><h1><img src="{% static 'imagefolder/images/Screenshot.png' %}" width="90px" alt=""></h1></div>
     <div class="search-box">
         <form action="" method="post">
             <input type="text" name="search" id="srch" placeholder="search">
@@ -10,7 +13,8 @@
     </div>
     <ul>
         <li><a href="/">HOME</a></li>
-        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/new">NEW</a></li>
+        <li><a href="/contact">CONTACT</a></li>
         <li><a href="{% url 'posts:list' %}">Post</a></li>
         <li><a href="login.html"><img style="border-radius: 1rem; background-color:white;" src="{% static 'imagefolder/icons/account.png' %}" width="19px" alt=""></a></li>
         
@@ -26,10 +30,3 @@
         </label>
     </div>
 </header>
-<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>

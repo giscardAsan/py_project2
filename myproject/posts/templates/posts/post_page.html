@@ -4,10 +4,18 @@
 
  
 {% block content %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
 <section>
-    <img class="image"
-      src="{{ post.images.url }}" alt="{{ post.title }}"
-    />
+  {% if post.image %}
+    <img  src="{{ post.image.url }}" alt="{{ post.title }}" />
+    {% endif %}
     <h2>{{ post.title }}</h2>
     <p>{{ post.body }}</p>
     <p>{{ post.date }}</p>

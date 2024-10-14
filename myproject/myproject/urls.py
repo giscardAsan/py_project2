@@ -24,7 +24,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage),
     path('about/', views.about),
-    path('posts/', include ('posts.urls'))
+    path('new/', views.new),
+    path('backend/', views.backend, name="endd"),
+    path('posts/', include ('posts.urls')),
+    path('contact/', include ('contact.urls')),
+    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

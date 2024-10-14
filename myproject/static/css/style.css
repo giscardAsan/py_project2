@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
 }
 
 *{
@@ -1064,6 +1064,7 @@ max-width: 32px;
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
+    
 
 }
 .home_1 form{

@@ -18,3 +18,6 @@ def new(request):
  
 def backend(request):
    return render(request, 'backend1-1.html')
+
+def upcoming(request):
+   return render(request, 'upcoming.html')

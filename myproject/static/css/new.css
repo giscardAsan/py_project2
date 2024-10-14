@@ -29,7 +29,7 @@
         justify-content: center;
     }
 
-    #backBtn_22, #nextBtn_2{
+    #backBtn_22, #nextBtn_22{
         width: 0px;
         cursor: pointer;
         margin: 10px;

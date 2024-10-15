@@ -21,3 +21,6 @@ def backend(request):
 
 def upcoming(request):
    return render(request, 'upcoming.html')
+
+def talent(request):
+   return render(request, 'talent.html')

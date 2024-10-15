@@ -1143,3 +1143,84 @@ max-width: 32px;
 
 
 
+
+
+   /*talent*/
+
+.talen{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.talen p{
+    font-size: 17px;
+}
+
+.talen button{
+    width: 170px;
+    height: 60px;
+    font-size: 16px;
+    background-color: rgb(230, 190, 12);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.world{
+    text-align: center;
+}
+.world h2{
+    font-size: 32px;
+}
+
+.world p{
+    font-size: 15px;
+    color: #faebeb96;
+}
+.pics{
+    text-align: center;
+    background-color: white;
+    color: #000;
+}
+
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pics h2{
+    font-size: 40px;
+}
+
+.pics p{
+    font-size: 20px;
+}
+
+.popu{
+    border: 2px solid white;
+    padding: 10px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 70px 5px black;
+}
+
+.poopu{
+    border: 2px solid white;
+    padding: 10px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 70px 5px black;
+}
+
+.pooopu{
+    border: 2px solid white;
+    padding: 10px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 70px 5px black;
+}

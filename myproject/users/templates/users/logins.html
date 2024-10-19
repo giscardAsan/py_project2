@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+  User login
+{% endblock %}
+ 
+{% block content %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+  <h1>User Login</h1>
+  <form class="form-with" action="/users/logins/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button>submit</button>
+  </form>
+  <br>
+  <br>
+  <br>
+
+{% endblock %}

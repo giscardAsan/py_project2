@@ -27,3 +27,6 @@ def talent(request):
 
 def sale(request):
    return render(request, 'sale.html')
+
+def policy(request):
+   return render(request, 'policy.html')

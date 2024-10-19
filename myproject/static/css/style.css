@@ -1140,6 +1140,10 @@ max-width: 32px;
        color: #00bcd4;
    }
 
+   .contact .text p{
+    color: white;
+   }
+
 
 
 
@@ -1474,4 +1478,29 @@ body{
     .cart{
         width: 90%;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.koka{
+    text-align: start;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.list{
+    text-align: start;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
 }

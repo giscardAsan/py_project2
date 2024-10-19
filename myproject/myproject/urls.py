@@ -28,6 +28,7 @@ urlpatterns = [
     path('upcoming/', views.upcoming),
     path('sale/', views.sale),
     path('talent/', views.talent),
+    path('policy/', views.policy),
     path('backend/', views.backend, name="endd"),
     path('posts/', include ('posts.urls')),
     path('contact/', include ('contact.urls')),

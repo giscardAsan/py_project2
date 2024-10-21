@@ -19,10 +19,11 @@ from django.urls import path, include
 from . import views
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage),
+    path('', views.home),
     path('about/', views.about),
     path('new/', views.new),
     path('upcoming/', views.upcoming),
@@ -32,6 +33,7 @@ urlpatterns = [
     path('backend/', views.backend, name="endd"),
     path('posts/', include ('posts.urls')),
     path('contact/', include ('contact.urls')),
+     path('admin/', RedirectView.as_view(url='/admin'),name="admin"),
     path('users/', include ('users.urls')),
     
 ]

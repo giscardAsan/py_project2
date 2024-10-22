@@ -21,9 +21,16 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic.base import RedirectView
 
+
+
+
+
+app_name = 'myproject'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('main/', views.main, name='main'),
     path('about/', views.about),
     path('new/', views.new),
     path('upcoming/', views.upcoming),

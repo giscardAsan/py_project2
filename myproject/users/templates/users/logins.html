@@ -1,11 +1,302 @@
-{% extends 'layout.html' %}
 {% load static %}
 
-{% block title %}
-  User login
-{% endblock %}
+
+
+{% block header %}
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial;
+            background-attachment: fixed;
+        }
+    
+    
+        
+    
+        header{
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            z-index: 99;
+            box-shadow: 0 0 10px #000;
+            background: rgb(0, 0, 0);
+        }
+    
+        #chki{
+            display: none;
+        }
+    
+        i{
+            color: white;
+            cursor: pointer;
+        }
+    
+        header .logo{
+            flex: 1;
+            margin-left: 50px;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    
+        header .search-box{
+            flex: 1;
+            position: relative;
+        }
+    
+        .search-box input{
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            background-color: white;
+            border-radius: 30px;
+            color: gray;
+            font-size: 16px;
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 40px;
+        }
+    
+        .search-box button{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: scale(0.9);
+            background-color: green;
+        }
+    
+        header ul{
+            flex: 2;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        header ul li{
+            list-style: none;
+        }
+    
+        header ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 15px;
+        }
+    
+        header ul li a:hover{
+            border-bottom: 2px solid cadetblue;
+        }
+    
+        
+    
+        @media(max-width:1000px){
+            .search-box button{
+                position: absolute;
+            }
+    
+           
+    
+           
+    
+            #chki:checked ~ ul{
+                right: 0;
+            }
+        }
+    
+        @media(max-width:600px){
+            header .logo{
+                font-size: 10px;
+                margin-left: 8px;
+            }
+    
+            header ul{
+                width: 100;
+            }
+        }
+    
+        a button{
+            width: 60px;
+            height: 30px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <header>
+        <input type="checkbox" name="" id="chki">
+        <div class="logo"><h1><img src="{% static 'imagefolder/images/Screenshot.png' %}" width="150px" alt=""></h1></div>
+        <!-- <div class="search-box">
+            <form action="" method="post">
+                <input type="text" name="search" id="srch" placeholder="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div> -->
+        <ul>
+          
+            
+                <li>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+
+
+                  <!-- <li><a href="new.html">NEW</a></li>
+            <li><a href="about us.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li> -->
+            <li><a href="/users/logins"><button>LOGIN</button></a></li>
+        </ul>
+       
+    </header>
+    <br>
+<br>
+    {% endblock %}
+  
+
  
 {% block content %}
+<body style="background-image: url('{% static 'imagefolder/images/rawuf.png' %}');">
+  
+</body>
+<style>
+ 
+.popo{
+display: flex;
+background-image: url(rawuf.png);
+background-size: cover;
+height: 60vh;
+justify-content: center;
+align-items: center;
+background-position: center;
+background-size: cover;
+}
+
+section{
+position: relative;
+max-width: 500px;
+background-color: transparent;
+border: 2px solid rgba(255, 255, 255, 0.5);
+border-radius: 20px;
+backdrop-filter: blur(55px);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem 3rem;
+transition: all 0.5s ease-in-out;
+}
+
+h1{
+font-size: 2rem;
+color: white;
+text-align: center;
+}
+
+.inputbox{
+position: relative;
+margin: 20px 0;
+max-width: 550px;
+border-bottom: 2px solid #fff;
+transition: all 0.5s ease-in-out;
+}
+
+.inputbox input{
+width: 100%;
+height: 40px;
+background: transparent;
+border: none;
+outline: none;
+font-size: 1rem;
+padding: 0 35px 0 5px;
+color: #fff
+}
+
+.inputbox img{
+position: absolute;
+right: 8px;
+color: #fff;
+font-size: 1.2rem;
+top: 12px;
+transition: all 0.5s ease-in-out;
+}
+
+.inputbox label{
+position: absolute;
+left: 5px;
+transform: translateY(-50%);
+color: #fff;
+font-size: 1rem;
+pointer-events: none;
+transition: all 0.5s ease-in-out;
+}
+
+.input:focus ~ label, 
+input:valid ~ label{
+top: -5px;
+font-size: 0.9rem;
+color: #a8a8a8;
+}
+
+.button{
+width: 100%;
+height: 40px;
+border-radius: 40px;
+background-color: rgba(255, 255, 255, 1);
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 1rem;
+font-weight: 600;
+transition: all 0.4s ease;
+}
+
+button:hover{
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+.register{
+font-size: 0.9rem;
+color: #fff;
+text-align: center;
+margin: 25px 0 10px;
+transition: all 0.5s ease-in-out;
+}
+
+.register p a{
+text-decoration: none;
+color: #fff;
+transition: all 0.5s ease-in-out;
+background: transparent;
+}
+
+.register p a:hover{
+text-decoration: underline;
+color: #a8a8a8;
+}
+
+.recover{
+text-align: right;
+font-size: 1rem;
+}
+
+.recover a{
+text-decoration: none;
+color: rgb(125, 125, 235);
+}
+
+.recover a:hover{
+color: blue;
+text-decoration: underline;
+}
+</style>
 <br>
     <br>
     <br>
@@ -14,13 +305,33 @@
     <br>
     <br> 
   <h1>User Login</h1>
-  <form class="form-with" action="/users/logins/" method="post">
+  <nav class="popo">
+    <section>
+  <form action="/users/logins/" method="post">
     {% csrf_token %}
-    {{ form }}
-    <button>submit</button>
+     <div class="inputbox">
+      <img width="20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7ElEQVR4nO3UPUpDQRQF4I9gp4h1/MEtqGQPBu3sLd2CqxAFCxdhQBFchegWlJdE6xSpDESEEYbnjC+8RLF4B25zf86ZOXcYGvwnHGCA6ZzRRzcl0F8A+TREkRL4Kq7O4cJyxPMNo1AY4qgG+SFeAsc41dDGdXSCO2zNQLyOXjR3j+2qZT9HJznFUqKvhZPo5q84/on4CmuRl2d4D8OP2It6d/EQahNcRrtbwXlK4LP5rZTbKRFdhOFJyD2hU5opckvObb9VsqLKuuwryhYCNnCDW2zKo7bArGgE6lv0659dd0EiBfarL9rgr/ABCyOWRsKdmrwAAAAASUVORK5CYII=">
+      <input type="text" name="username" id="username" required>
+      <label for="">USERNAME</label>
+  </div>
+ 
+  <div class="inputbox">
+      <img width="20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAq0lEQVR4nO2VSwrCMBRFz1yd2f2oK9DliBPtkuw+6lL8TsuTwC10ohFMLMF34EIgl7ybPzgFUgE10AIPKbQPwDx38Q1wBeyFLsA6Z/FOhY7AAphIS6BRX5cjRDWY+faNbyfPOfV21IOZx+hXYp8ywEmDhmWPsZI3HMxk3DXo9APvTN5bygAm5fJH+c8AlljlBvgWD2C+BfghxK8h/hBZ0U+xjf0Z2VgBHH7BE3P8sK9A6eX0AAAAAElFTkSuQmCC">
+      <input type="password" name="password" id="pass" >
+      <label style="color: #fff;" for="">PASSWORD</label>
+  </div>
+  <p class="recover">
+      <a href="">Recover Password</a>
+  </p>
+  <br>
+  <input class="button" type="submit" value="LOGIN">
+  <div class="register">
+    <P>Dont  have an account? <a href="">Register</a></P>
+  </div>
   </form>
   <br>
   <br>
   <br>
-
+</section>
+</nav>
 {% endblock %}

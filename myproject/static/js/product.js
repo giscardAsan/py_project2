@@ -157,6 +157,7 @@
         video.pause();
         video.currentTime = 0;
       }
+      
     
       
       

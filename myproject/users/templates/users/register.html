@@ -62,7 +62,6 @@
         }
     
         .search-box button{
-            cursor: pointer;
             width: 40px;
             height: 40px;
             border-radius: 30px;
@@ -92,9 +91,9 @@
             padding: 10px 15px;
         }
     
-        header ul li a:hover{
+        {% comment %} header ul li a:hover{
             border-bottom: 2px solid cadetblue;
-        }
+        } {% endcomment %}
     
         
     
@@ -124,7 +123,7 @@
         }
     
         a button{
-            width: 60px;
+            width: 100px;
             height: 30px;
             background-color: red;
             color: white;
@@ -143,16 +142,16 @@
           
             
                 <li>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-facebook"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
                 </li>
 
 
                   <!-- <li><a href="new.html">NEW</a></li>
             <li><a href="about us.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li> -->
-            <li><a href="/users/logins"><button>LOGIN</button></a></li>
+            <li><a><button>WELCOME</button></a></li>
         </ul>
        
     </header>
@@ -322,10 +321,11 @@
           </div>
           <input class="button" type="submit" value="REGISTER">
           <div class="register">
-              
+            <p>Already have an accounte? <a href="/users/logins/">Login</a></p>
           </div>
+          
       </form>
-      <p>Already have an accounte? <a href="{% url 'logins' %}">Log In</a></p>
+     
   </section>
   
 </nav>

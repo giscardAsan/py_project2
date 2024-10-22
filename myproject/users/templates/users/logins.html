@@ -93,9 +93,9 @@
             padding: 10px 15px;
         }
     
-        header ul li a:hover{
+        {% comment %} header ul li a:hover{
             border-bottom: 2px solid cadetblue;
-        }
+        } {% endcomment %}
     
         
     
@@ -125,11 +125,12 @@
         }
     
         a button{
-            width: 60px;
+            width: 100px;
             height: 30px;
             background-color: red;
             color: white;
         }
+    </style>
     </style>
     <header>
         <input type="checkbox" name="" id="chki">
@@ -144,16 +145,16 @@
           
             
                 <li>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-facebook"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
                 </li>
 
 
                   <!-- <li><a href="new.html">NEW</a></li>
             <li><a href="about us.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li> -->
-            <li><a href="/users/logins"><button>LOGIN</button></a></li>
+            <li><a><button>WELCOME</button></a></li>
         </ul>
        
     </header>
@@ -326,7 +327,7 @@ text-decoration: underline;
   <br>
   <input class="button" type="submit" value="LOGIN">
   <div class="register">
-    <P>Dont  have an account? <a href="">Register</a></P>
+    <P>Dont  have an account? <a href="/users/register/">Register</a></P>
   </div>
   </form>
   <br>

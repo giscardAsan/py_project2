@@ -6,6 +6,15 @@ from django.shortcuts import render
 
 
 
+def next(request):
+    return render(request, 'next.html')
+ 
+def africa(request):
+    return render(request, 'africa.html')
+ 
+def comedy(request):
+   return render(request, 'comedy.html')
+
 def home(request):
     return render(request, 'home.html')
 
